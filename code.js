@@ -15,7 +15,7 @@ function partition(array, lo, hi) {
             swap(array, ++pivot, i);
         }
     }
-    swap(array, ++pivot, i);
+    swap(array, lo, pivot);
     return pivot;
 }
 function quicksort(array) {
