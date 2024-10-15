@@ -1,23 +1,3 @@
-//swap function
-function swap(array, a, b) {
-    let temp = array[a];
-    array[a] = array[b];
-    array[b] = temp;
-    return array; 
-}
-
-//partition from class slides
-
-function partition(array, lo, hi) {
-    let pivot = lo;
-    for (let i = lo + 1; i <= hi; i++) {
-        if (array[i] < array[lo]) {
-            swap(array, ++pivot, i);
-        }
-    }
-    swap(array, lo, pivot);
-    return pivot;
-}
 function quicksort(array) {
     if (array.length <= 1) {
         return array;
@@ -45,4 +25,25 @@ function quicksort(array) {
         }
     }
     return array;
+}
+
+//swap function
+function swap(array, a, b) {
+    let temp = array[a];
+    array[a] = array[b];
+    array[b] = temp;
+    return array; 
+}
+
+//partition from class slides
+
+function partition(array, lo, hi) {
+    let pivot = lo;
+    for (let i = lo + 1; i <= hi; i++) {
+        if (array[i] < array[lo]) {
+            swap(array, ++pivot, i);
+        }
+    }
+    swap(array, lo, pivot);
+    return pivot;
 }
