@@ -2,7 +2,7 @@
 function swap(array, a, b) {
     let temp = array[a];
     array[a] = array[b];
-    array[b] =  temp;
+    array[b] = temp;
     return array; 
 }
 
@@ -26,8 +26,8 @@ function quicksort(array) {
     let lo = 0;
     let hi = arrary.length - 1;
     let stack = [];
-
-    stack [top] = low;
+    
+    stack[top] = lo;
     stack[++top] = hi;
 
     while (top >= 0) {
