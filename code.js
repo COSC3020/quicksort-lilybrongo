@@ -24,7 +24,7 @@ function quicksort(array) {
     }
     let top = 0;
     let lo = 0;
-    let hi = arrary.length - 1;
+    let hi = array.length - 1;
     let stack = [];
     
     stack[top] = lo;
